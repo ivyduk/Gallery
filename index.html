@@ -6,17 +6,29 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body>
+<body onload="askName(this)">
+
+	<header id="travel">
+		<h1>
+			<span id="Name"></span>We invite you to live a life wherever you want!
+		</h1>
+	</header>
 	
 	<div id = "image">
-		Hover over an image below to display here.
+		Discover wonderful things below.
 	</div>
 	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Travel by train" src = "img/train.jpeg" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
 	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Enjoy sunsets" src = "img/sunset.jpg" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
 	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" src = "img/thailand.jpg" alt = "Visit Thailand" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<img class = "preview" alt = "walk into an Oasis" src = "img/oasis.jpeg" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "once per month go to the beach" src = "img/beach.jpg" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "img/snow.jpg" alt = "Snow time" onfocus="upDate(this)" onblur="mark(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
 </body>
 </html>

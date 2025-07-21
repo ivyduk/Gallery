@@ -24,6 +24,25 @@ function upDate(previewPic){
     */
 		let element = document.getElementById("image");
         element.style.backgroundImage = "url('')";
-        element.innerHTML = "Hover over an image below to display here";
+        element.innerHTML = "Pick an Image";
 
 	}
+
+
+  function askName(){
+    const name = prompt("what is your name visitor?");
+    let element = document.getElementById("Name");
+    element.innerHTML = "Dear " + name + " ";
+    console.log(name)
+    images = document.querySelectorAll(".preview");
+    for (var i = 0; i < images.length; i++){
+      images[i].setAttribute("tabindex", "0");
+    }
+  }
+
+  function mark(previewPic) {
+    previewPic.style.filter = 'blur(5px)';
+    let element = document.getElementById("image");
+    element.style.backgroundImage = "url('')";
+    element.innerHTML = "Pick an Image";
+  }
